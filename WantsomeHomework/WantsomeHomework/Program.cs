@@ -12,7 +12,7 @@ namespace WantsomeHomework
         {
             int numToRead = ReadInteger("Write an integer number: ");
             int[] myArr = ReadArray(numToRead, -100, 100);
-
+            PrintArray(myArr);
         }
 
         private static int ReadInteger(string text)
@@ -43,6 +43,15 @@ namespace WantsomeHomework
             }
 
             return myArr;
+        }
+
+        private static void PrintArray(int[] myArr)
+        {
+            for(int i = 0; i < myArr.Length; i++)
+            {
+                Console.Write($"{myArr[i]} ");
+            }
+            Console.WriteLine();
         }
     }
 }
