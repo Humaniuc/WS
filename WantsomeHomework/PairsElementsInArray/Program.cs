@@ -13,7 +13,7 @@ namespace PairsElementsInArray
             int numberToRead = ReadInteger("Write number of array elements: ");
             int[] myArr = ReadArray(numberToRead);
 
-
+            int numberPairs = ReadInteger("Write a number to find his pairs elements sum:  ");
         }
 
         private static int ReadInteger(string text)
