@@ -13,6 +13,8 @@ namespace WantsomeHomework
             int numToRead = ReadInteger("Write an integer number: ");
             int[] myArr = ReadArray(numToRead, -100, 100);
             PrintArray(myArr);
+
+            Console.WriteLine($"Sum of even elements in this array is: {SumEven(myArr)}");
         }
 
         private static int ReadInteger(string text)
@@ -52,6 +54,19 @@ namespace WantsomeHomework
                 Console.Write($"{myArr[i]} ");
             }
             Console.WriteLine();
+        }
+
+        private static long SumEven(int[] myArr)
+        {
+            long sum = 0;
+            for(int i = 0; i < myArr.Length; i++)
+            {
+                if(myArr[i] % 2 == 0)
+                {
+                    sum += myArr[i];
+                }
+            }
+            return sum;
         }
     }
 }
