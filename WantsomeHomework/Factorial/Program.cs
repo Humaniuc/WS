@@ -11,8 +11,17 @@ namespace Factorial
         static void Main(string[] args)
         {
             uint number = ReadPositiveInteger("Write a positive number: ");
+
+            System.Diagnostics.Stopwatch stopWatchRec = new System.Diagnostics.Stopwatch();
+            stopWatchRec.Start();
             Console.WriteLine("recursiveFactorial = " + RecursiveFactorial(number));
+            stopWatchRec.Stop();
+            Console.WriteLine(stopWatchRec.Elapsed);
+            System.Diagnostics.Stopwatch stopWatchIt = new System.Diagnostics.Stopwatch();
+            stopWatchIt.Start();
             Console.WriteLine("iterativeFactorial = " + IterativeFactorial(number));
+            stopWatchIt.Stop();
+            Console.WriteLine(stopWatchIt.Elapsed);
         }
 
         private static uint ReadPositiveInteger(string text)
