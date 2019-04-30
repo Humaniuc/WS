@@ -11,6 +11,9 @@ namespace PairsElementsInArray
         static void Main(string[] args)
         {
             int numberToRead = ReadInteger("Write an integer");
+            int[] myArr = new int[numberToRead];
+
+
         }
 
         private static int ReadInteger(string text)
@@ -29,6 +32,16 @@ namespace PairsElementsInArray
             } while (!correct);
 
             return numberToRead;
+        }
+
+        private static int[] ReadArray(int numElem, int lowerLimit, int upperLimit)
+        {
+            int[] myArr = new int[numElem];
+            for(int i = 0; i < myArr.Length; i++)
+            {
+                myArr[i] = ReadInteger($"myArr[{i}]= ");
+            }
+            return myArr;
         }
     }
 }
