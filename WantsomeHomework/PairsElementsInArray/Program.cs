@@ -10,6 +10,25 @@ namespace PairsElementsInArray
     {
         static void Main(string[] args)
         {
+            int numberToRead = ReadInteger("Write an integer");
+        }
+
+        private static int ReadInteger(string text)
+        {
+            bool correct;
+            int numberToRead;
+            do
+            {
+                Console.Write(text);
+                correct = int.TryParse(Console.ReadLine(), out numberToRead);
+                if (!correct)
+                {
+                    Console.WriteLine("Invalid Input");
+                    Console.Write(text);
+                }
+            } while (!correct);
+
+            return numberToRead;
         }
     }
 }
