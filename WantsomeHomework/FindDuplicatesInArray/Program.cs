@@ -13,6 +13,15 @@ namespace FindDuplicatesInArray
             uint numElem = ReadPositiveInteger("Write a positive integer number: ");
             int[] myArr = CreateArray(numElem);
             PrintArray(myArr);
+
+            if(FindDuplicates(myArr))
+            {
+                Console.WriteLine("This array has duplicates");
+            }
+            else
+            {
+                Console.WriteLine("This array has no duplicates");
+            }
         }
 
         private static uint ReadPositiveInteger(string text)
@@ -69,6 +78,21 @@ namespace FindDuplicatesInArray
                 Console.Write($"{myArr[i]} ");
             }
             Console.WriteLine();
+        }
+
+        private static bool FindDuplicates(int[] myArr)
+        {
+            for(int i = 0; i < myArr.Length - 1; i++)
+            {
+                for(int j = i+1; j < myArr.Length; j++)
+                {
+                    if(myArr[i] == myArr[j])
+                    {
+                        return true;
+                    }
+                }
+            }
+            return false;
         }
     }
 }
