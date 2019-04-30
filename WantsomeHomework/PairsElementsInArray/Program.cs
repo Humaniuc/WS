@@ -33,15 +33,5 @@ namespace PairsElementsInArray
 
             return numberToRead;
         }
-
-        private static int[] ReadArray(int numElem)
-        {
-            int[] myArr = new int[numElem];
-            for(int i = 0; i < myArr.Length; i++)
-            {
-                myArr[i] = ReadInteger($"myArr[{i}]= ");
-            }
-            return myArr;
-        }
     }
 }
