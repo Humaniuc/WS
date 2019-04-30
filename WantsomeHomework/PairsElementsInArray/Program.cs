@@ -10,7 +10,7 @@ namespace PairsElementsInArray
     {
         static void Main(string[] args)
         {
-            int numberToRead = ReadInteger("Write an integer");
+            int numberToRead = ReadInteger("Write number of array elements: ");
             int[] myArr = ReadArray(numberToRead);
 
 
