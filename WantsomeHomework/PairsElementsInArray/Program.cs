@@ -11,6 +11,9 @@ namespace PairsElementsInArray
         static void Main(string[] args)
         {
             int numberToRead = ReadInteger("Write an integer");
+            int[] myArr = new int[numberToRead];
+
+
         }
 
         private static int ReadInteger(string text)
