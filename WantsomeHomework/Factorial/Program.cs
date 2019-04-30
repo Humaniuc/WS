@@ -11,6 +11,7 @@ namespace Factorial
         static void Main(string[] args)
         {
             uint number = ReadPositiveInteger("Write a positive number: ");
+            Console.WriteLine("recursiveFactorial = " + RecursiveFactorial(5));
         }
 
         private static uint ReadPositiveInteger(string text)
@@ -29,6 +30,19 @@ namespace Factorial
             } while (!correct);
 
             return number;
+        }
+
+        private static long RecursiveFactorial(uint number)
+        {
+            if (number == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return number * RecursiveFactorial(number - 1);
+            }
+        
         }
     }
 }
