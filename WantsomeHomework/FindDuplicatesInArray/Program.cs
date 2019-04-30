@@ -10,7 +10,8 @@ namespace FindDuplicatesInArray
     {
         static void Main(string[] args)
         {
-            uint nuElem = ReadPositiveInteger("Write a positive integer number: ");
+            uint numElem = ReadPositiveInteger("Write a positive integer number: ");
+            int[] myArr = CreateArray(numElem);
         }
 
         private static uint ReadPositiveInteger(string text)
@@ -31,5 +32,35 @@ namespace FindDuplicatesInArray
 
             return number;
         }
+
+        private static int[] CreateArray(uint numElem)
+        {
+            int[] myArr = new int[numElem];
+            for(int i = 0; i< myArr.Length; i++)
+            {
+                myArr[i] = ReadInteger($"myArr[{i}]= ", int.MinValue, int.MaxValue);
+            }
+            return myArr;
+        }
+
+        private static int ReadInteger(string text, int lowerLimit, int upperLimit)
+        {
+            int number;
+            bool correct;
+            Console.Write(text);
+            do
+            {
+                correct = int.TryParse(Console.ReadLine(), out number);
+                if (!correct || number < lowerLimit || number > upperLimit)
+                {
+                    Console.WriteLine("Invalid input");
+                    Console.Write(text);
+                }
+            } while (!correct || number < lowerLimit || number > upperLimit);
+
+            return number;
+        }
+
+        
     }
 }
