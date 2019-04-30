@@ -14,6 +14,8 @@ namespace PairsElementsInArray
             int[] myArr = ReadArray(numberToRead);
 
             int numberPairs = ReadInteger("Write a number to find his pairs elements sum:  ");
+
+            FindPairs(myArr, numberPairs);
         }
 
         private static int ReadInteger(string text)
@@ -42,6 +44,20 @@ namespace PairsElementsInArray
                 myArr[i] = ReadInteger($"myArr[{i}]= ");
             }
             return myArr;
+        }
+
+        private static void FindPairs(int[] myArr, int pairSum)
+        {
+            for(int i = 0; i < myArr.Length-1; i++)
+            {
+                for(int j = i+1; j< myArr.Length; j++)
+                {
+                    if(myArr[i] + myArr[j] == pairSum)
+                    {
+                        Console.WriteLine($"{myArr[i]} + {myArr[j]} = {pairSum}");
+                    }
+                }
+            }
         }
     }
 }
