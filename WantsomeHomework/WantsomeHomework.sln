@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumDigitsNumber", "SumDigit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMajorityNumber", "FindMajorityNumber\FindMajorityNumber.csproj", "{D359EEAA-324B-409E-A18A-65469D4D70E2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectCicleList", "DetectCicleList\DetectCicleList.csproj", "{F485DD69-C098-4BB8-B113-651F0F0141DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D359EEAA-324B-409E-A18A-65469D4D70E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D359EEAA-324B-409E-A18A-65469D4D70E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D359EEAA-324B-409E-A18A-65469D4D70E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F485DD69-C098-4BB8-B113-651F0F0141DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F485DD69-C098-4BB8-B113-651F0F0141DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F485DD69-C098-4BB8-B113-651F0F0141DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F485DD69-C098-4BB8-B113-651F0F0141DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
