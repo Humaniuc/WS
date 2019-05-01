@@ -10,10 +10,12 @@ namespace MergeTwoSortedLinkedList
     {
         static void Main(string[] args)
         {
-            int numElemArrayA = ReadInteger("Write first array's number elements: ", 1, int.MaxValue);
-            int numElemArrayB = ReadInteger("Write second array's number elements: ", 1, int.MaxValue);
+            int numElemArrayA = ReadInteger("Write first array's number elements: ", 1, int.MaxValue);   
             int[] arrA = CreateArray(numElemArrayA, 'A');
+            int numElemArrayB = ReadInteger("Write second array's number elements: ", 1, int.MaxValue);
             int[] arrB = CreateArray(numElemArrayB, 'B');
+            SortArray(arrA);
+            SortArray(arrB);
 
             LinkedList<int> listA = new LinkedList<int>(arrA);
             LinkedList<int> listB = new LinkedList<int>(arrB);
@@ -22,6 +24,9 @@ namespace MergeTwoSortedLinkedList
             PrintList(listA);
             Console.Write("List B: ");
             PrintList(listB);
+
+            LinkedList<int> listMerged = MergeTwoLists(listA, listB);
+            PrintList(listMerged);
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -81,7 +86,6 @@ namespace MergeTwoSortedLinkedList
         }
         private static LinkedList<int> CreateSortedList(int[] arr)
         {
-            SortArray(arr);
             LinkedList<int> list = new LinkedList<int>(arr);
             
             return list;
@@ -94,6 +98,48 @@ namespace MergeTwoSortedLinkedList
                 Console.Write($"{node} ");
             }
             Console.WriteLine();
+        }
+
+        private static LinkedList<int> MergeTwoLists(LinkedList<int> listA, LinkedList<int> listB)
+        {
+            LinkedList<int> listMerged = new LinkedList<int>();
+            LinkedListNode<int> nodeB = listB.First;
+            LinkedListNode<int> nodeA = listA.First;
+            
+            while(nodeA != null)
+            {
+                if(!listMerged.Contains(nodeA.Value))
+                {
+                    listMerged.AddLast(nodeA.Value);
+                }
+                nodeA = nodeA.Next;
+            }
+            while(nodeB != null)
+            {
+                if(!listMerged.Contains(nodeB.Value))
+                {
+                    if (nodeB.Value < listMerged.First.Value)
+                    {
+                        listMerged.AddFirst(nodeB.Value);
+                    }
+                    else if(nodeB.Value > listMerged.Last.Value)
+                    {
+                        listMerged.AddLast(nodeB.Value);
+                    }
+                    else
+                    {
+                        LinkedListNode<int> node = listMerged.First;
+                        while (nodeB.Value > node.Value)
+                        {
+                            node = node.Next;
+                        }
+                        listMerged.AddBefore(node, nodeB.Value);
+                    }
+                }
+                nodeB = nodeB.Next;
+            }
+            
+            return listMerged;
         }
     }
 }
