@@ -10,9 +10,11 @@ namespace FindMajorityNumber
     {
         static void Main(string[] args)
         {
-            int elements = ReadInteger("Write a positeive integer: ", 0, int.MaxValue);
+            int elements = ReadInteger("Write a positeive integer: ", 1
+                , int.MaxValue);
             int[] myArr = CreateArray(elements);
             PrintArray(myArr);
+            Console.WriteLine("Majority number: " + FindMajorityNumber(myArr));
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -35,7 +37,7 @@ namespace FindMajorityNumber
         private static int[] CreateArray(int elements)
         {
             int[] myArr = new int[elements];
-            for(int i = 0; i< myArr.Length; i++)
+            for (int i = 0; i < myArr.Length; i++)
             {
                 myArr[i] = ReadInteger($"myArr[{i}]= ", int.MinValue, int.MaxValue);
             }
@@ -45,11 +47,35 @@ namespace FindMajorityNumber
 
         private static void PrintArray(int[] myArr)
         {
-            for(int i = 0; i< myArr.Length; i++)
+            for (int i = 0; i < myArr.Length; i++)
             {
                 Console.Write($"{myArr[i]} ");
             }
             Console.WriteLine();
+        }
+
+        private static int FindMajorityNumber(int[] myArr)
+        {
+            int count = 1;
+            int number = myArr[0];
+            int i = 0;
+            while (i < myArr.Length - 1)
+            {
+                for (int j = i + 1; j < myArr.Length; j++)
+                {
+                    number = myArr[j];
+                    if (myArr[i] == myArr[j])
+                    {
+                        count++;
+                        if (count > myArr.Length / 2)
+                        {
+                            break;
+                        }
+                    }
+                }
+                i++;
+            }
+            return number;
         }
     }
 }
