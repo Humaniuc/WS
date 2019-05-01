@@ -10,8 +10,7 @@ namespace FindMajorityNumber
     {
         static void Main(string[] args)
         {
-            int elements = ReadInteger("Write a positeive integer: ", 1
-                , int.MaxValue);
+            int elements = ReadInteger("Write a positeive integer: ", 1, int.MaxValue);
             int[] myArr = CreateArray(elements);
             PrintArray(myArr);
             Console.WriteLine("Majority number: " + FindMajorityNumber(myArr));
