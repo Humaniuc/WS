@@ -11,7 +11,12 @@ namespace RemoveDuplicatesFromLinkedList
         static void Main(string[] args)
         {
             LinkedList<int> list = CreateList();
-            
+
+            Console.WriteLine("Before removing: ");
+            PrintList(list);
+
+            Console.WriteLine("After removing: ");
+            list = RemoveDuplicates(list);
             PrintList(list);
         }
 
@@ -52,6 +57,26 @@ namespace RemoveDuplicatesFromLinkedList
                 Console.Write($"{node} ");
             }
             Console.WriteLine();
+        }
+
+        private static LinkedList<int> RemoveDuplicates(LinkedList<int> list)
+        {
+            LinkedListNode<int> node = list.First;
+            while(node.Next!=null)
+            {
+                LinkedListNode<int> comparerNode = node.Next;
+                while(comparerNode!=null)
+                {
+                    if(node.Value == comparerNode.Value)
+                    {
+                        list.Remove(comparerNode);
+                    }
+                    comparerNode = comparerNode.Next;
+                }
+                node = node.Next;
+            }
+
+            return list;
         }
     }
 }
