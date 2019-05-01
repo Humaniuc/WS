@@ -11,6 +11,7 @@ namespace SumDigitsNumber
         static void Main(string[] args)
         {
             int number = ReadInteger("Enter an integer number: ");
+            Console.WriteLine("Sum is: " + SumDigitsRecursiv(number));
         }
 
         private static int ReadInteger(string text)
@@ -28,6 +29,18 @@ namespace SumDigitsNumber
                 }
             } while (!correct);
             return number;
+        }
+
+        private static int SumDigitsRecursiv(int number)
+        {
+            if (number / 10 == 0)
+            {
+                return number % 10;
+            }
+            else
+            {
+                return number % 10 + SumDigitsRecursiv(number / 10);
+            }
         }
     }
 }
