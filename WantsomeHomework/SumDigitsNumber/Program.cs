@@ -10,6 +10,24 @@ namespace SumDigitsNumber
     {
         static void Main(string[] args)
         {
+            int number = ReadInteger("Enter an integer number: ");
+        }
+
+        private static int ReadInteger(string text)
+        {
+            int number;
+            bool correct;
+            Console.Write(text);
+            do
+            {
+                correct = int.TryParse(Console.ReadLine(), out number);
+                if (!correct)
+                {
+                    Console.WriteLine("Invalid input");
+                    Console.Write(text);
+                }
+            } while (!correct);
+            return number;
         }
     }
 }
