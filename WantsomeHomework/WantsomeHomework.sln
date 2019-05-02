@@ -3,41 +3,41 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumEvenElementsArray", "WantsomeHomework\SumEvenElementsArray.csproj", "{D4D63969-88F1-4D66-8275-D32129EFD86E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E01.SumEvenElementsArray", "WantsomeHomework\E01.SumEvenElementsArray.csproj", "{D4D63969-88F1-4D66-8275-D32129EFD86E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PairsElementsInArray", "PairsElementsInArray\PairsElementsInArray.csproj", "{4A1D97E0-BE83-4BE8-9A9D-7F9AE2410CD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E02.PairsElementsInArray", "PairsElementsInArray\E02.PairsElementsInArray.csproj", "{4A1D97E0-BE83-4BE8-9A9D-7F9AE2410CD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{8A9ABEBC-29B0-4371-A457-F652CE348A17}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E03.Factorial", "Factorial\E03.Factorial.csproj", "{8A9ABEBC-29B0-4371-A457-F652CE348A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindDuplicatesInArray", "FindDuplicatesInArray\FindDuplicatesInArray.csproj", "{1D4EB29B-2F93-4D8B-84BA-877B467FEDEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E04.FindDuplicatesInArray", "FindDuplicatesInArray\E04.FindDuplicatesInArray.csproj", "{1D4EB29B-2F93-4D8B-84BA-877B467FEDEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesFromLinkedList", "RemoveDuplicatesFromLinkedList\RemoveDuplicatesFromLinkedList.csproj", "{034929A1-61D4-4E17-83BC-112FC75E3795}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E05.RemoveDuplicatesFromLinkedList", "RemoveDuplicatesFromLinkedList\E05.RemoveDuplicatesFromLinkedList.csproj", "{034929A1-61D4-4E17-83BC-112FC75E3795}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumDigitsNumber", "SumDigitsNumber\SumDigitsNumber.csproj", "{DBE4EA1C-A3FD-4F1E-BD78-8BC69BF4D2DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E06.SumDigitsNumber", "SumDigitsNumber\E06.SumDigitsNumber.csproj", "{DBE4EA1C-A3FD-4F1E-BD78-8BC69BF4D2DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMajorityNumber", "FindMajorityNumber\FindMajorityNumber.csproj", "{D359EEAA-324B-409E-A18A-65469D4D70E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E07.FindMajorityNumber", "FindMajorityNumber\E07.FindMajorityNumber.csproj", "{D359EEAA-324B-409E-A18A-65469D4D70E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DetectCicleList", "DetectCicleList\DetectCicleList.csproj", "{F485DD69-C098-4BB8-B113-651F0F0141DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E08.DetectCicleList", "DetectCicleList\E08.DetectCicleList.csproj", "{F485DD69-C098-4BB8-B113-651F0F0141DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeTwoSortedLinkedList", "MergeTwoSortedLinkedList\MergeTwoSortedLinkedList.csproj", "{2A7FC186-D2EB-4A69-ACAD-48EACF863BCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E09.MergeTwoSortedLinkedList", "MergeTwoSortedLinkedList\E09.MergeTwoSortedLinkedList.csproj", "{2A7FC186-D2EB-4A69-ACAD-48EACF863BCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramStrings", "AnagramStrings\AnagramStrings.csproj", "{065020AB-4142-447D-A8BE-EC6C1F7D82E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E10.AnagramStrings", "AnagramStrings\E10.AnagramStrings.csproj", "{065020AB-4142-447D-A8BE-EC6C1F7D82E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFibonacciNumber", "NFibonacciNumber\NFibonacciNumber.csproj", "{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E11.NFibonacciNumber", "NFibonacciNumber\E11.NFibonacciNumber.csproj", "{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountSetedBits", "CountSetedBits\CountSetedBits.csproj", "{11465BA6-0718-452A-B30C-2B3157088467}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E12.CountSetedBits", "CountSetedBits\E12.CountSetedBits.csproj", "{11465BA6-0718-452A-B30C-2B3157088467}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesString", "RemoveDuplicatesString\RemoveDuplicatesString.csproj", "{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E13.RemoveDuplicatesString", "RemoveDuplicatesString\E13.RemoveDuplicatesString.csproj", "{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdElementEndLinkedList", "ThirdElementEndLinkedList\ThirdElementEndLinkedList.csproj", "{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E14.ThirdElementEndLinkedList", "ThirdElementEndLinkedList\E14.ThirdElementEndLinkedList.csproj", "{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmstrongNumber", "AmstrongNumber\ArmstrongNumber.csproj", "{A403D9C5-8EB9-4995-B273-ABCF0B847B90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E15.ArmstrongNumber", "AmstrongNumber\E15.ArmstrongNumber.csproj", "{A403D9C5-8EB9-4995-B273-ABCF0B847B90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{DC8A168C-2D8E-41C7-8001-3CD48FE2E9E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E16.PrimeNumber", "PrimeNumber\E16.PrimeNumber.csproj", "{DC8A168C-2D8E-41C7-8001-3CD48FE2E9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeNumber", "PalindromeNumber\PalindromeNumber.csproj", "{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E17.PalindromeNumber", "PalindromeNumber\E17.PalindromeNumber.csproj", "{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.ReverseLinkedList", "18.ReverseLinkedList\18.ReverseLinkedList.csproj", "{D0650EB1-74A8-4955-AB1B-C53A908AC37E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E18.ReverseLinkedList", "18.ReverseLinkedList\E18.ReverseLinkedList.csproj", "{D0650EB1-74A8-4955-AB1B-C53A908AC37E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
