@@ -31,7 +31,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesString", "R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdElementEndLinkedList", "ThirdElementEndLinkedList\ThirdElementEndLinkedList.csproj", "{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmtrongNumber", "AmstrongNumber\ArmtrongNumber.csproj", "{A403D9C5-8EB9-4995-B273-ABCF0B847B90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmstrongNumber", "AmstrongNumber\ArmstrongNumber.csproj", "{A403D9C5-8EB9-4995-B273-ABCF0B847B90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
