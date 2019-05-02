@@ -12,6 +12,7 @@ namespace ThirdElementEndLinkedList
         {
             LinkedList<int> list = CreateList();
             PrintList(list);
+            Console.WriteLine("ThirdLast: " + DisplayThirdLast(list));
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -58,6 +59,16 @@ namespace ThirdElementEndLinkedList
                 Console.Write($"{node} ");
             }
             Console.WriteLine();
+        }
+
+        private static int DisplayThirdLast(LinkedList<int> list)
+        {
+            LinkedListNode<int> node = list.First;
+            while(node.Next.Next.Next != null)
+            {
+                node = node.Next;
+            }
+            return node.Value;
         }
     }
 }
