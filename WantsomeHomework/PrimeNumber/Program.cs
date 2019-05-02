@@ -11,6 +11,14 @@ namespace PrimeNumber
         static void Main(string[] args)
         {
             int number = ReadNumber("Write an integer: ");
+            if(PrimeNumber(number))
+            {
+                Console.WriteLine($"{number} is prime");
+            }
+            else
+            {
+                Console.WriteLine($"{number} is not prime");
+            }
         }
 
         private static int ReadNumber(string text)
@@ -28,6 +36,18 @@ namespace PrimeNumber
                 }
             } while (!correct);
             return number;
+        }
+
+        private static bool PrimeNumber(int number)
+        {
+            for(int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if(number % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
