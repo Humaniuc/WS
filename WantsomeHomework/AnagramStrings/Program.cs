@@ -11,6 +11,14 @@ namespace AnagramStrings
         static void Main(string[] args)
         {
             string[] strings = CreateStrings();
+            if(CompareStrings(strings))
+            {
+                Console.WriteLine($"{strings[0]} and {strings[1]} are Anagrams");
+            }
+            else
+            {
+                Console.WriteLine($"{strings[0]} and {strings[1]} are not Anagrams");
+            }
         }
 
         private static string[] CreateStrings()
@@ -30,6 +38,18 @@ namespace AnagramStrings
             } while (strings[1].Length != strings[0].Length);
 
             return strings;
+        }
+
+        private static bool CompareStrings(string[] strings)
+        {
+            foreach(char c in strings[0])
+            {
+                if(!strings[1].Contains(c))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
