@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountSetedBits", "CountSete
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesString", "RemoveDuplicatesString\RemoveDuplicatesString.csproj", "{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdElementEndLinkedList", "ThirdElementEndLinkedList\ThirdElementEndLinkedList.csproj", "{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB312D3C-5D66-4D2C-BF1C-D02D4D190179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87829F3E-F0C2-4CB8-9DE8-BD11D755AB06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
