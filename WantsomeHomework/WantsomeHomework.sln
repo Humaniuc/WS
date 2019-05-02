@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PalindromeNumber", "PalindromeNumber\PalindromeNumber.csproj", "{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "18.ReverseLinkedList", "18.ReverseLinkedList\18.ReverseLinkedList.csproj", "{D0650EB1-74A8-4955-AB1B-C53A908AC37E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9A24AC-FB7F-4B53-948A-C5E533B0125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0650EB1-74A8-4955-AB1B-C53A908AC37E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0650EB1-74A8-4955-AB1B-C53A908AC37E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0650EB1-74A8-4955-AB1B-C53A908AC37E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0650EB1-74A8-4955-AB1B-C53A908AC37E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
