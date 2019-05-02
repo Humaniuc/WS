@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnagramStrings", "AnagramSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFibonacciNumber", "NFibonacciNumber\NFibonacciNumber.csproj", "{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountSetedBits", "CountSetedBits\CountSetedBits.csproj", "{11465BA6-0718-452A-B30C-2B3157088467}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1AA55AA-9322-41AD-81E2-11BF4ABB42E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11465BA6-0718-452A-B30C-2B3157088467}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11465BA6-0718-452A-B30C-2B3157088467}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11465BA6-0718-452A-B30C-2B3157088467}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11465BA6-0718-452A-B30C-2B3157088467}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
