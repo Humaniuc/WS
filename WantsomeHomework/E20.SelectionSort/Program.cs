@@ -13,6 +13,8 @@ namespace E20.SelectionSort
             int number = ReadInteger("Write number of array elements: ", 0, int.MaxValue);
             int[] arr = CreateArray(number);
             PrintArray(arr);
+            arr = SelectionSort(arr);
+            PrintArray(arr);
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -52,5 +54,31 @@ namespace E20.SelectionSort
             Console.WriteLine();
         }
 
+        private static void Swap(ref int a, ref int b)
+        {
+            a += b;
+            b = a - b;
+            a = a - b;
+        }
+
+        private static int[] SelectionSort(int[] arr)
+        {
+            int min;
+
+            for(int i = 0; i < arr.Length-1; i++)
+            {
+                min = i;
+                for (int j = i+1; j < arr.Length; j++)
+                {
+                    if (arr[min] > arr[j])
+                    {
+                        min = j;
+                    }
+                }
+                Swap(ref arr[min], ref arr[i]);
+            }
+
+            return arr;
+        }
     }
 }
