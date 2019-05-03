@@ -12,8 +12,11 @@ namespace E21.BubbleSort
         {
             int number = ReadInteger("Write number of array elements: ", 0, int.MaxValue);
             int[] arr = CreateArray(number);
+            Console.Write("Unsorted: ");
             PrintArray(arr);
-            
+            BubbleSort(arr);
+            Console.Write("Sorted: ");
+            PrintArray(arr);
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -51,6 +54,27 @@ namespace E21.BubbleSort
                 Console.Write($"{myArr[i]} ");
             }
             Console.WriteLine();
+        }
+
+        private static void Swap(ref int a, ref int b)
+        {
+            a += b;
+            b = a - b;
+            a = a - b;
+        }
+
+        private static void BubbleSort(int[] arr)
+        {
+            for(int i = 0; i < arr.Length-1; i++)
+            {
+                for(int j = 0; j < arr.Length-1; j++)
+                {
+                    if(arr[j] > arr[j+1])
+                    {
+                        Swap(ref arr[j], ref arr[j + 1]);
+                    }
+                }
+            }
         }
     }
 }
