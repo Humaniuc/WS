@@ -12,7 +12,6 @@ namespace E18.ReverseLinkedList
         {
             LinkedList<int> list = CreateList();
             PrintList(list);
-
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -60,5 +59,6 @@ namespace E18.ReverseLinkedList
             }
             Console.WriteLine();
         }
+
     }
 }
