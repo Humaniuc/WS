@@ -11,5 +11,6 @@ namespace E20.SelectionSort
         static void Main(string[] args)
         {
         }
+
     }
 }
