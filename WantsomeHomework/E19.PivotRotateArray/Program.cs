@@ -12,7 +12,13 @@ namespace E19.PivotRotateArray
         {
             int number = ReadInteger("Write number of array elements: ", 0, int.MaxValue);
             int[] arr = CreateArray(number);
+            Console.WriteLine("Before rotate: ");
             PrintArray(arr);
+ 
+            arr = PivotRotate(arr);
+            Console.WriteLine("After rotate: ");
+            PrintArray(arr);
+
         }
 
         private static int ReadInteger(string text, int lowerLimit, int upperLimit)
@@ -50,6 +56,19 @@ namespace E19.PivotRotateArray
                 Console.Write($"{myArr[i]} ");
             }
             Console.WriteLine();
+        }
+
+        private static int[] PivotRotate(int[] arr)
+        {
+            int pivot = ReadInteger($"Write a number between {0} and {arr.Length - 1}: ", 0, arr.Length - 1);
+            int[] myArr = new int[arr.Length];
+
+            for(int i = arr.Length-1, j = 0 ; i > pivot || j <= pivot; i--, j++)
+            {
+                myArr[j] = arr[i];
+                myArr[i] = arr[j];
+            }
+            return myArr;
         }
     }
 }
