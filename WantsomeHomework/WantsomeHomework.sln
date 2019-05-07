@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P1W3bLeapYear", "P1W3bLeapY
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P2W3bATMTransactions", "P2W3bATMTransactions\P2W3bATMTransactions.csproj", "{862C2EAE-D53F-46FC-8DA0-4A1D3D3CB923}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddNumbersInFile", "AddNumbersInFile\AddNumbersInFile.csproj", "{9E0630B0-0D88-467F-B33C-C87ED37AA507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{862C2EAE-D53F-46FC-8DA0-4A1D3D3CB923}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{862C2EAE-D53F-46FC-8DA0-4A1D3D3CB923}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{862C2EAE-D53F-46FC-8DA0-4A1D3D3CB923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E0630B0-0D88-467F-B33C-C87ED37AA507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E0630B0-0D88-467F-B33C-C87ED37AA507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E0630B0-0D88-467F-B33C-C87ED37AA507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E0630B0-0D88-467F-B33C-C87ED37AA507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
